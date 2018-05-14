@@ -14,10 +14,10 @@ Prereq: User must have sudo nopassword access to run script from sudo without as
   vi inventory.txt
   ```
 3. Update the user and User-Pass in script[aws-kernel-update.sh]-
-  ---
+  ```
   vi aws-kernel-update.sh
   ```
 4. run aws-kernel-update.sh-
-  ---
+  ```
   ./aws-kernel-update.sh
   ```
