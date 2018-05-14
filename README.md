@@ -11,7 +11,7 @@ Prereq: User must have sudo nopassword access to run script from sudo without as
 2. Update the inventory.txt with the server ip on which you want to do the kernel update-
   ```
   cd kernel-update
-  vi unventory.txt
+  vi inventory.txt
   ```
 3. Update the user and User-Pass in script[aws-kernel-update.sh]-
   ---
