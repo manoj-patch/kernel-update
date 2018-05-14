@@ -1,7 +1,7 @@
 #!/bin/bash
 TIMESTAMP=`date "+%Y-%m-%d"`
 exec > >(tee ${TIMESTAMP}-kernlupdate.log) 2>&1
-USER="mkumar46"
+USER="aws-user1`"
 SERVICE=("zookeeper.service" "kafka.service" "tomcat.service" "httpd.service")
 TMPFILE1="/tmp/kernel-list.txt"
 echo "Current runtime of script is at `date`"
@@ -16,7 +16,7 @@ fi
 
 #Below function is for establishing SSH Connection with Servers#
 ssh_conn() {
-  sshpass -p 'geetasunny1$burra' ssh -n -o StrictHostKeyChecking=no $USER@$IPADDRESS $1
+  sshpass -p 'User-Pass' ssh -n -o StrictHostKeyChecking=no $USER@$IPADDRESS $1
 }
 
 #To reconnect after remote server reboot
